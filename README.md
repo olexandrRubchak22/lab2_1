@@ -111,26 +111,26 @@ public void onClick(View v)
 
 *Пояснення*
 
-Виклик setContentView(R.layout.activity_main) створює елементи вікна з файлу ресурсів res/layout/activity_main.xml
+Виклик `setContentView(R.layout.activity_main)` створює елементи вікна з файлу ресурсів `res/layout/activity_main.xml`
 
-За допомогою m_my_list = (ViewGroup)findViewById(R.id.list) відбувається пошук елемента інтерфейсу, до якого будуть додаватися дочірні елементи списку. Елемент приводиться до типу ViewGroup, щоб можна було додавати дочірні елементи (наперед відомо, що LinearLayout наслідує ViewGroup).
+За допомогою `m_my_list = (ViewGroup)findViewById(R.id.list)` відбувається пошук елемента інтерфейсу, до якого будуть додаватися дочірні елементи списку. Елемент приводиться до типу `ViewGroup`, щоб можна було додавати дочірні елементи (наперед відомо, що LinearLayout наслідує ViewGroup).
 
-За допомогою LayoutInflater l = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE)
+За допомогою `LayoutInflater l = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE)`
 отримується системний об’єкт, який вміє створювати елементи інтерфейсу з файлу розмітки.
 
-Виклик View item = l.inflate( R.layout.list_item, null) створює один елемент списку.
+Виклик `View item = l.inflate( R.layout.list_item, null)` створює один елемент списку.
 
-Виклик ((TextView)item.findViewById(R.id.itemtext)).setText(s) встановлює текст у відповідний TextView елементу списку
+Виклик `((TextView)item.findViewById(R.id.itemtext)).setText(s)` встановлює текст у відповідний `TextView` елементу списку
 
-Виклик item.findViewById(R.id.morebutton).setOnClickListener(this) встановлює поточний екземпляр MainActivity обробником подій при натисненні кнопки деталізації елемента списку.
+Виклик `item.findViewById(R.id.morebutton).setOnClickListener(this)` встановлює поточний екземпляр `MainActivity` обробником подій при натисненні кнопки деталізації елемента списку.
 
-Функція bringToFront() використовється для того, щоб визначити, який саме елемент інтерфейсу буде отримувати подію onClick в першу чергу.
+Функція `bringToFront()` використовється для того, щоб визначити, який саме елемент інтерфейсу буде отримувати подію `onClick` в першу чергу.
 
-Функція setFillAfter(true) забезпечує збереження нової позиції елемента інтерфейсу після анімації.
+Функція `setFillAfter(true)` забезпечує збереження нової позиції елемента інтерфейсу після анімації.
 
-Фукнція setEnabled(false) використовується для того, щоб  елемент інтерфейсу не опрацьовував події під час анімації.
+Фукнція `setEnabled(false)` використовується для того, щоб  елемент інтерфейсу не опрацьовував події під час анімації.
 
-Виклик anim.setAnimationListener(...) встановлює обробник подій на анімацію, який ставить вікно зі списком (елемент з ідентифікатором R.id.listview) перед іншими вікнами (при цьому вікно з ідентифікатором R.id.detail ховається).
+Виклик `anim.setAnimationListener(...)` встановлює обробник подій на анімацію, який ставить вікно зі списком (елемент з ідентифікатором `R.id.listview`) перед іншими вікнами (при цьому вікно з ідентифікатором `R.id.detail` ховається).
 
 Скріншоти з ходом виконання роботи можна подивитися за посиланням https://www.dropbox.com/sh/m0yl9e7n86as5qg/AACo9zrVYQEYiJi79tQqpQXoa?dl=0
 
