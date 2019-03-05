@@ -36,10 +36,10 @@ git clone https://github.com/mdavydov/MobileLab02.git
   ```
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
-  public void onClick(View v)
-  {
-    ...
-  }
+    public void onClick(View v)
+    {
+        ...
+    }
 }
 ```
 
