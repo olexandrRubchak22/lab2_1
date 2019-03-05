@@ -12,8 +12,8 @@ git clone https://github.com/mdavydov/MobileLab02.git
 
 Хід виконання роботи:
 
- 1. Створити нову програму в AndroidStudio.
- 1. Відредагувати res/layout/activity_main.xml у режимі Text
+1. Створити нову програму в AndroidStudio.
+1. Відредагувати res/layout/activity_main.xml у режимі Text
     1. Розмістити інтерфейсні елементи за допомогою вертикального і горизонтального LinearLayout (android:orientation="vertical" або android:orientation="horizontal")
     1. Створити список з використанням ScrollView
     1. Розмістити текстові написи з використанням TextView
@@ -25,10 +25,15 @@ git clone https://github.com/mdavydov/MobileLab02.git
     1. Прописати ідентифікатори елементів android:id
     1. Створити приховані елементи, які будуть з’являтися при натиснені на інші елементи (див. LinearLayout з ідентифікатором “@+id/detail”)
     1. Можна візуально перевірити розміщення елементів з використанням режиму Design
- 1. Створити розміщення для елементів списку (див. файл list_item.xml)
- 1. Відредагувати файл MainActivity.java
-    1. Реалізувати інтерфейс View.OnClickListener:
-```
+1. Створити розміщення для елементів списку (див. файл list_item.xml)
+1. Відредагувати файл MainActivity.java
+    1. Реалізувати інтерфейс View.OnClickListener.
+    1. Наповнити елементи списку у функції onCreate з використанням LayoutInflater, встановити текст відповідних елементів, додати обробники подій для натиcнень на елементи керування.
+    1. Реалізувати обробник подій і додати анімації для елементів, які повинні з’являтися або ховатися.
+1. Написати звіт 
+ 
+Реалізація інтерфейсу View.OnClickListener:
+  ```
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
   public void onClick(View v)
@@ -37,8 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   }
 }
 ```
-    1. Наповнити елементи списку у функції onCreate з використанням LayoutInflater, встановити текст відповідних елементів, додати обробники подій для натиcнень на елементи керування:
 
+Приклад наповнення списку:
 ```
 ViewGroup m_my_list;
 @Override
@@ -63,7 +68,8 @@ protected void onCreate(Bundle savedInstanceState)
     findViewById(R.id.detail).setOnClickListener(this);
 }
 ```
-    1. Реалізувати обробник подій і додати анімації для елементів, які повинні з’являтися або ховатися:
+   
+Приклад обробника подій на натиснення:
 ```
 public void onClick(View v)
 {
@@ -100,7 +106,7 @@ public void onClick(View v)
     }
 }
 ```
-1. Написати звіт
+
 
 
 *Пояснення*
