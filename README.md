@@ -12,7 +12,7 @@ git clone https://github.com/mdavydov/MobileLab02.git
 
 Хід виконання роботи:
 
-1. Подивитися відео з поясненнями про використання засобів AndroidStudio для створення інтерфейсу користувача: (https://www.youtube.com/watch?v=lUymjX4K7FM) і засобів XCode (https://developer.apple.com/videos/play/wwdc2015/218/)
+1. Подивитися відео з поясненнями про прототипування в Sketch і використання AndroidStudio для створення інтерфейсу користувача: (https://www.youtube.com/watch?v=lUymjX4K7FM) і про використання засобів XCode (https://developer.apple.com/videos/play/wwdc2015/218/)
 1. Створити нову програму в AndroidStudio.
 1. Відредагувати res/layout/activity_main.xml у режимі Text
     1. Розмістити інтерфейсні елементи за допомогою вертикального і горизонтального LinearLayout (android:orientation="vertical" або android:orientation="horizontal")
