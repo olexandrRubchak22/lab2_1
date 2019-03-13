@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="item">ItemString</string>
+    <string name="search_icon">Search Icon</string>
+    <string name="button1">Button1</string>
+    <string name="button2">Button2</string>
+    <string name="button3">Button3</string>
+    <string name="moreinfoheader">Here comes more info about your item</string>
+    <string name="moreinfo">More info\nMore info\nMore info\nMore info\nMore info\nMore info\nMore info\n</string>
+</resources>

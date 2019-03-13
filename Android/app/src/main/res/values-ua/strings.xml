@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Тестова програма</string>
+    <string name="item">Елемент списку</string>
+    <string name="search_icon">Пошук</string>
+    <string name="button1">Кнопка1</string>
+    <string name="button2">Кнопка2</string>
+    <string name="button3">Кнопка3</string>
+    <string name="moreinfoheader">Тут міститься додаткова інформація</string>
+    <string name="moreinfo">Додаткова інформація\nДодаткова інформація\nДодаткова інформація\nДодаткова інформація\n</string>
+</resources>
