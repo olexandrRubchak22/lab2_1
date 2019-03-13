@@ -133,5 +133,5 @@ public void onClick(View v)
 
 Виклик `anim.setAnimationListener(...)` встановлює обробник подій на анімацію, який ставить вікно зі списком (елемент з ідентифікатором `R.id.listview`) перед іншими вікнами (при цьому вікно з ідентифікатором `R.id.detail` ховається).
 
-Скріншоти з ходом виконання роботи можна подивитися за посиланням https://www.dropbox.com/sh/m0yl9e7n86as5qg/AACo9zrVYQEYiJi79tQqpQXoa?dl=0
+
 
